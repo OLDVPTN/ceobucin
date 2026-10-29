@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Happy 100 Days, My Love ♡ — Our Little Love Story</title>
+  <meta name="description" content="Sebuah hadiah kecil untuk 100 hari cerita kita: dari sapaan sederhana, dunia virtual, setiap badai yang kita lewati, sampai harapan untuk selamanya. I love you, always. ♡" />
+  <meta name="theme-color" content="#fbeaf0" />
+  <meta property="og:title" content="Happy 100 Days, My Love ♡" />
+  <meta property="og:description" content="100 hari, banyak cerita, satu orang yang ingin terus aku pilih." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z' fill='%23c98a9c'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Quicksand:wght@400;500;600;700&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Hati kecil yang beterbangan lembut -->
+  <div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+
+  <!-- Pemutar musik latar (aktif otomatis jika ada file audio, kalau tidak memakai melodi music box) -->
+  <button class="music-btn" id="musicBtn" type="button" aria-pressed="false" aria-label="Putar musik latar" title="Putar musik latar ♪">
+    <span class="music-icon music-icon-play" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="currentColor" focusable="false"><path d="M12 3v10.55A4 4 0 1 0 14 17V7h4V3h-6z"/></svg>
+    </span>
+    <span class="music-icon music-icon-pause" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="currentColor" focusable="false"><path d="M7 5h3.4v14H7zM13.6 5H17v14h-3.6z"/></svg>
+    </span>
+  </button>
+
+  <!-- ============ PEMBUKA — WELCOME TO OUR STORY ============ -->
+  <header class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <span class="blob blob-1" data-parallax="20"></span>
+      <span class="blob blob-2" data-parallax="30"></span>
+      <span class="blob blob-3" data-parallax="14"></span>
+      <span class="hero-watermark">100</span>
+      <span class="deco deco-1" data-parallax="34">✦</span>
+      <span class="deco deco-2" data-parallax="22">❀</span>
+      <span class="deco deco-3" data-parallax="28">♡</span>
+      <span class="deco deco-4" data-parallax="18">✦</span>
+      <span class="deco deco-5" data-parallax="26">♡</span>
+    </div>
+
+    <div class="hero-inner">
+      <p class="hero-eyebrow reveal">— Our Little Love Story —</p>
+      <h1 class="hero-title reveal" style="--rd:.08s">Happy 100 Days,<br /><em>My Love</em>&nbsp;♡</h1>
+      <p class="hero-subtitle reveal" style="--rd:.16s">100 hari, banyak cerita, satu orang yang ingin terus aku pilih.</p>
+
+      <figure class="hero-figure reveal" style="--rd:.24s">
+        <img src="assets/images/hero-couple.png" alt="Ilustrasi dua kekasih kecil yang saling berpegangan tangan" width="1024" height="1024" fetchpriority="high" />
+      </figure>
+
+      <div class="hero-cta reveal" style="--rd:.32s">
+        <button class="btn btn-primary" id="openStoryBtn" type="button" data-scroll="#perjalanan">Buka Cerita Kita ♡</button>
+      </div>
+
+      <p class="day-counter reveal" style="--rd:.4s" role="status">
+        <span class="day-counter-text">Day <span class="day-counter-number" id="dayNumber">100</span> of Our Little Love Story</span>
+        <span class="day-counter-hearts" aria-hidden="true">♡&nbsp;♡&nbsp;♡</span>
+      </p>
+
+      <button class="scroll-hint reveal" style="--rd:.48s" type="button" data-scroll="#perjalanan" aria-label="Gulir ke bawah untuk membuka cerita">
+        <span class="scroll-hint-label">gulir pelan-pelan</span>
+        <svg class="scroll-hint-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ TIMELINE PERJALANAN CINTA ============ -->
+    <nav class="timeline-section" id="perjalanan" aria-label="Timeline perjalanan cinta">
+      <div class="container">
+        <p class="section-eyebrow reveal">Peta Perjalanan Kita</p>
+        <h2 class="timeline-title reveal" style="--rd:.06s">Empat Babak Kecil,<br />Satu Cerita yang Besar</h2>
+        <p class="timeline-hint reveal" style="--rd:.12s">Sentuh setiap momen untuk melompat ke bagiannya ♡</p>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <a class="timeline-card" href="#first-chat">
+              <span class="timeline-dot" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor" focusable="false"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              </span>
+              <span class="timeline-emoji" aria-hidden="true">💌</span>
+              <span class="timeline-body">
+                <span class="timeline-name">First Chat</span>
+                <span class="timeline-desc">Awal mula kita mengenal satu sama lain.</span>
+              </span>
+            </a>
+          </li>
+          <li class="timeline-item reveal" style="--rd:.08s">
+            <a class="timeline-card" href="#roblox">
+              <span class="timeline-dot" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor" focusable="false"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              </span>
+              <span class="timeline-emoji" aria-hidden="true">🎮</span>
+              <span class="timeline-body">
+                <span class="timeline-name">Our Roblox Moments</span>
+                <span class="timeline-desc">Bermain dan menciptakan kenangan bersama.</span>
+              </span>
+            </a>
+          </li>
+          <li class="timeline-item reveal" style="--rd:.16s">
+            <a class="timeline-card" href="#memories">
+              <span class="timeline-dot" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor" focusable="false"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              </span>
+              <span class="timeline-emoji" aria-hidden="true">📸</span>
+              <span class="timeline-body">
+                <span class="timeline-name">Our Memories</span>
+                <span class="timeline-desc">Foto dan perjalanan hubungan kita.</span>
+              </span>
+            </a>
+          </li>
+          <li class="timeline-item reveal" style="--rd:.24s">
+            <a class="timeline-card" href="#future">
+              <span class="timeline-dot" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor" focusable="false"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              </span>
+              <span class="timeline-emoji" aria-hidden="true">💍</span>
+              <span class="timeline-body">
+                <span class="timeline-name">Our Future</span>
+                <span class="timeline-desc">Harapan untuk terus bersama hingga pernikahan.</span>
+              </span>
+            </a>
+          </li>
+        </ol>
+      </div>
+    </nav>
+
+    <!-- ============ BAGIAN PERTAMA — WHERE IT ALL BEGAN ============ -->
+    <section class="story story-awal" id="first-chat" aria-labelledby="first-chat-title">
+      <div class="container narrow">
+        <header class="story-head">
+          <span class="story-tag reveal">Bagian Pertama</span>
+          <p class="story-kicker reveal" style="--rd:.06s">Where It All Began 💌</p>
+          <h2 class="story-title reveal" id="first-chat-title" style="--rd:.12s">Semua Berawal dari Sapaan Sederhana</h2>
+        </header>
+
+        <!-- Ganti screenshot chat pertama: timpa file assets/images/first-chat.jpg -->
+        <figure class="polaroid polaroid-chat reveal lightbox-trigger" data-caption="Percakapan pertama kita — awal dari segalanya." role="button" tabindex="0" aria-label="Perbesar screenshot percakapan pertama">
+          <span class="tape" aria-hidden="true"></span>
+          <img src="assets/images/first-chat.jpg" alt="Screenshot percakapan pertama kita" width="864" height="1152" loading="lazy" />
+          <figcaption>Dari percakapan sederhana, tumbuh cerita yang begitu berarti.</figcaption>
+        </figure>
+        <p class="img-hint reveal">sentuh gambar untuk memperbesar ♡</p>
+
+        <div class="letter reveal">
+          <p>Enggak kerasa ya, waktu berjalan begitu cepat. Kalau aku ingat-ingat lagi awal mula kita ketemu dulu, semuanya berawal dari ruang obrolan virtual yang sederhana. Siapa sangka, dari sapaan iseng di layar ponsel, kita malah nyambung ngobrol ngalor-ngidul dengan begitu hangat dan seru. Rasanya kayak nemuin rumah di tempat yang paling enggak disangka-sangka.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BAGIAN KEDUA — OUR LITTLE ROBLOX WORLD ============ -->
+    <section class="story story-roblox" id="roblox" aria-labelledby="roblox-title">
+      <div class="container">
+        <header class="story-head">
+          <span class="story-tag reveal">Bagian Kedua</span>
+          <p class="story-kicker reveal" style="--rd:.06s">Our Little Roblox World 🎮</p>
+          <h2 class="story-title reveal" id="roblox-title" style="--rd:.12s">Dunia Virtual, Kenangan Nyata</h2>
+        </header>
+
+        <!-- Ganti screenshot Roblox: timpa file assets/images/roblox-memory*.jpg (boleh 1, 2, atau 3 gambar;
+             slot yang filenya tidak ada otomatis menjadi kartu kenangan kosong yang rapi) -->
+        <div class="scrapbook">
+          <figure class="polaroid polaroid-main reveal lightbox-trigger" data-caption="Bermain bersama, tertawa bersama — kenangan yang nyata." role="button" tabindex="0" aria-label="Perbesar kenangan Roblox utama">
+            <span class="tape tape-rose" aria-hidden="true"></span>
+            <img src="assets/images/roblox-memory.jpg" alt="Kenangan bermain Roblox bersama" width="1152" height="864" loading="lazy" />
+            <figcaption>duo imut di dunia blocky ♡</figcaption>
+          </figure>
+
+          <div class="scrapbook-side">
+            <figure class="memory-slot slot-tilt-a reveal">
+              <img src="assets/images/roblox-memory-2.jpg" alt="Kenangan Roblox — menonton matahari terbenam bersama" width="1152" height="864" loading="lazy" data-optional />
+              <div class="slot-placeholder" aria-hidden="true">
+                <span class="pixel-box"><span class="pixel-heart"></span></span>
+                <span class="slot-title">slot kenangan</span>
+                <span class="slot-sub">simpan screenshot sebagai<br /><code>roblox-memory-2.jpg</code></span>
+              </div>
+            </figure>
+            <figure class="memory-slot slot-tilt-b reveal" style="--rd:.1s">
+              <img src="assets/images/roblox-memory-3.jpg" alt="Kenangan Roblox — membangun rumah bersama" width="1152" height="864" loading="lazy" data-optional />
+              <div class="slot-placeholder" aria-hidden="true">
+                <span class="pixel-box"><span class="pixel-heart"></span></span>
+                <span class="slot-title">slot kenangan</span>
+                <span class="slot-sub">simpan screenshot sebagai<br /><code>roblox-memory-3.jpg</code></span>
+              </div>
+            </figure>
+          </div>
+        </div>
+
+        <p class="story-quote reveal">“Awalnya cuma bermain bersama, ternyata kamu jadi seseorang yang ingin terus aku temani.”</p>
+
+        <div class="pixel-row reveal" aria-hidden="true">
+          <span class="pixel-box"><span class="pixel-heart"></span></span>
+          <span class="pixel-box"><span class="pixel-heart pixel-heart-soft"></span></span>
+          <span class="pixel-box"><span class="pixel-heart"></span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BAGIAN KETIGA — THROUGH EVERY LITTLE STORM ============ -->
+    <section class="story story-memories" id="memories" aria-labelledby="memories-title">
+      <div class="container">
+        <header class="story-head">
+          <span class="story-tag reveal">Bagian Ketiga</span>
+          <p class="story-kicker reveal" style="--rd:.06s">Through Every Little Storm 🌷</p>
+          <h2 class="story-title reveal" id="memories-title" style="--rd:.12s">Bukan Selalu Mudah, Tapi Selalu Berharga</h2>
+        </header>
+
+        <div class="storm-grid">
+          <!-- Ganti foto kalian berdua: timpa file assets/images/our-photo.jpg -->
+          <figure class="polaroid polaroid-tilt reveal lightbox-trigger" data-caption="Setapak demi setapak, selalu berjalan beriringan. ♡" role="button" tabindex="0" aria-label="Perbesar foto kita berdua">
+            <span class="tape" aria-hidden="true"></span>
+            <img src="assets/images/our-photo.jpg" alt="Foto kita berdua berjalan bersama menghadap arah yang sama" width="864" height="1152" loading="lazy" />
+            <figcaption>setapak demi setapak, beriringan ♡</figcaption>
+          </figure>
+
+          <div class="storm-text">
+            <p class="reveal">Tapi ya namanya perjalanan cinta, enggak mungkin mulus terus, kan? Kita sempat diuji sama fase-fase berat. Mulai dari rasa rindu yang kadang menumpuk jadi sesak karena jarak, sampai peliknya masalah waktu dan komunikasi yang bikin kepikiran. Ada kalanya lelah, ada kalanya pengen nyerah. Tapi hebatnya, kita selalu punya alasan buat bertahan. Kita lewatin semuanya bareng-bareng, setapak demi setapak, sampai akhirnya kita ada di titik ini.</p>
+            <p class="reveal" style="--rd:.08s">Dari setiap badai yang lewat, justru di situlah cinta ini tumbuh makin besar, makin matang, dan makin dalam. Banyak banget hal yang bikin kita jadi lebih ngerti satu sama lain, belajar sabar, belajar menurunkan ego, dan belajar untuk terus membersamai. Ke depannya, aku tahu bakal ada banyak banget mimpi dan harapan yang ingin kita capai. Aku pengen kita terus saling merangkul, saling mengerti, dan berjalan beriringan secara adil, enggak ada yang merasa berjuang sendirian atau berat sebelah.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BAGIAN KEEMPAT — OUR FUTURE TOGETHER ============ -->
+    <section class="story story-future" id="future" aria-labelledby="future-title">
+      <div class="container narrow">
+        <header class="story-head">
+          <span class="story-tag reveal">Bagian Keempat</span>
+          <p class="story-kicker reveal" style="--rd:.06s">Our Future Together 💍</p>
+          <h2 class="story-title reveal" id="future-title" style="--rd:.12s">Untuk Semua Hari yang Belum Kita Jalani</h2>
+        </header>
+
+        <!-- Ganti foto selfie kalian: timpa file assets/images/future-selfie.jpg -->
+        <figure class="future-frame reveal lightbox-trigger" data-caption="Menuju hari bahagia kita — selamanya. ♡" role="button" tabindex="0" aria-label="Perbesar foto selfie kita">
+          <span class="future-frame-heart future-frame-heart-left" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor" focusable="false"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </span>
+          <span class="future-frame-heart future-frame-heart-right" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor" focusable="false"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </span>
+          <img src="assets/images/future-selfie.jpg" alt="Foto selfie kita berdua yang paling istimewa" width="1024" height="1024" loading="lazy" />
+          <figcaption>“menuju hari bahagia kita” ♡</figcaption>
+        </figure>
+
+        <div class="letter letter-future">
+          <p class="reveal">Aku berharap, semoga hubungan kita ini terus dijaga langkahnya sampai nanti menjelang hari bahagia kita, sah dalam ikatan pernikahan yang diridhoi-Nya, dan terus bergandengan tangan menua bersama sampai rambut kita memutih, merajut cerita indah di hadapan keluarga besar kita berdua.</p>
+          <p class="reveal" style="--rd:.08s">Aku sayang kamu. Bertemu dengan kamu adalah anugerah terindah dari takdir yang Allah SWT berikan untuk hidupku. Semoga kita selalu selamanya, yaa... aamiinn... 🤲🏻🤲🏻</p>
+        </div>
+
+        <blockquote class="closing-quote reveal">
+          Kalau suatu hari nanti kita membuka kembali cerita ini, semoga kita sudah menjadi dua orang yang berhasil melewati banyak hal bersama. Dan semoga, tangan yang kugenggam hari ini tetap menjadi tangan yang kugenggam sampai akhir nanti. ♡
+        </blockquote>
+
+        <div class="hug-cta reveal">
+          <button class="btn btn-primary btn-hug" id="hugBtn" type="button">Satu Pelukan untuk Kamu ♡</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ PESAN PENUTUP ============ -->
+  <footer class="footer">
+    <span class="footer-deco" aria-hidden="true">✦ &nbsp;♡&nbsp; ✦</span>
+    <p class="footer-quote">“100 hari mungkin baru permulaan, tapi bersamamu adalah masa depan yang ingin terus aku perjuangkan. ♡”</p>
+    <p class="footer-note">dibuat dengan penuh cinta, khusus untuk kamu — <em>Day 100</em> ♡</p>
+  </footer>
+
+  <!-- ============ LIGHTBOX FOTO ============ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto diperbesar" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Tutup foto">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <figure class="lightbox-figure">
+      <img id="lightboxImg" alt="" />
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+  </div>
+
+  <!-- ============ OVERLAY PELUKAN ============ -->
+  <div class="hug-overlay" id="hugOverlay" role="dialog" aria-modal="true" aria-label="Pesanan pelukan untuk kamu" aria-hidden="true">
+    <div class="hug-stage" id="hugStage" aria-hidden="true"></div>
+    <div class="hug-card" role="document">
+      <span class="hug-heart" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="currentColor" focusable="false"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+      </span>
+      <p class="hug-message">Peluk jauh untuk kamu, sayang.<br />Terima kasih sudah menjadi bagian terindah dari ceritaku.<br /><strong>I love you, always. ♡</strong></p>
+      <button class="btn btn-soft" id="hugClose" type="button">Peluk balik ♡</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
